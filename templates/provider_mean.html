@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/create.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-form">
+            <form action="/api/provider/mean" method="POST">
+              <div class="container-input">
+                <label>Daerah:</label>
+                <input type="text" name="daerah" id="" />
+              </div>
+              <button type="submit" class="btn btn-primary" >Submit</button>
+            </form>
+          </div>
+    </div>
+    <a href="{{url_for('logout')}}">Press here to logout</a>
+</body>
+</html>
