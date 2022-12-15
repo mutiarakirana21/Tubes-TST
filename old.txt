@@ -6,3 +6,4 @@ app.config['DATABASE_HOST'] = 'satao.db.elephantsql.com'
     
 db = psycopg2.connect(host = app.config['DATABASE_HOST'] , database = app.config['DATABASE_DB'], user = app.config['DATABASE_USER'], password = app.config['DATABASE_PASSWORD'])
 
+ssh mutiarakirana@40.81.29.41

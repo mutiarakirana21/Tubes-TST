@@ -15,7 +15,7 @@ services:
       - MYSQL_ROOT_PASSWORD=root
     volumes:
       - ./database:/docker-entrypoint-initdb.d/
-      
+
   api:
     build: .
     environment:
@@ -23,7 +23,7 @@ services:
     links:
       - mysqldb
     ports:
-      - 5000:5000
+      - 80:5000
     depends_on:
       - mysqldb
 
