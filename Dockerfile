@@ -8,4 +8,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-ENTRYPOINT [ "python", "main.py" ]
+# ENTRYPOINT [ "flask", "-debug", "run" ]
+
+CMD [ "python", "main.py" ]

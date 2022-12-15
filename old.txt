@@ -1,0 +1,8 @@
+app.config['SECRET_KEY'] ='bisatst'
+app.config['DATABASE_USER'] = 'qemwctxp'
+app.config['DATABASE_PASSWORD'] = 'ibK9iEcTkbhF-8gkU7L-rZeFxYyaMrD7'
+app.config['DATABASE_DB'] = 'qemwctxp'
+app.config['DATABASE_HOST'] = 'satao.db.elephantsql.com'
+    
+db = psycopg2.connect(host = app.config['DATABASE_HOST'] , database = app.config['DATABASE_DB'], user = app.config['DATABASE_USER'], password = app.config['DATABASE_PASSWORD'])
+
